@@ -1,0 +1,134 @@
+datasource postgres {
+  provider = "postgresql"
+  url      = env("POSTGRESQL_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  accounts        Account[]
+  birthdate       DateTime?
+  cards           Card[]
+  children        User[]         @relation(name: "children")
+  createdAt       DateTime       @default(now())
+  depositLink     String?
+  email           String         @unique
+  firstName       String?
+  fundingSource   FundingSource? @relation(fields: [fundingSourceId], references: [id])
+  fundingSourceId String?
+  goals           Goal[]
+  id              String         @id @default(cuid())
+  lastName        String?
+  parent          User?          @relation(name: "children", fields: [parentId], references: [id])
+  parentId        String?
+  password        String
+  photo           String?
+  qrCode          String?
+  roles           String[]
+  tasks           Task[]
+  transactions    Transaction[]
+  updatedAt       DateTime       @updatedAt
+  username        String         @unique
+  zipcode         Int?
+}
+
+model FundingSource {
+  createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  updatedAt DateTime @updatedAt
+  users     User[]
+}
+
+model Setting {
+  createdAt            DateTime @default(now())
+  id                   String   @id @default(cuid())
+  notificationsEnabled Boolean?
+  updatedAt            DateTime @updatedAt
+}
+
+model Card {
+  account      Account? @relation(fields: [accountId], references: [id])
+  accountId    String?
+  balance      Float?
+  cardNumber   Int?
+  createdAt    DateTime @default(now())
+  id           String   @id @default(cuid())
+  transactions String?
+  updatedAt    DateTime @updatedAt
+  user         User?    @relation(fields: [userId], references: [id])
+  userId       String?
+}
+
+model Transaction {
+  amount          Int?
+  createdAt       DateTime  @default(now())
+  id              String    @id @default(cuid())
+  transactionDate DateTime?
+  updatedAt       DateTime  @updatedAt
+  user            User?     @relation(fields: [userId], references: [id])
+  userId          String?
+}
+
+model Task {
+  completed     Boolean?
+  createdAt     DateTime  @default(now())
+  dateCompleted DateTime?
+  id            String    @id @default(cuid())
+  name          String
+  price         Price[]
+  updatedAt     DateTime  @updatedAt
+  user          User?     @relation(fields: [userId], references: [id])
+  userId        String?
+}
+
+model Price {
+  ageGroup  EnumPriceAgeGroup?
+  amount    Float?
+  createdAt DateTime           @default(now())
+  id        String             @id @default(cuid())
+  task      Task?              @relation(fields: [taskId], references: [id])
+  taskId    String?
+  updatedAt DateTime           @updatedAt
+}
+
+model Chore {
+  createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  updatedAt DateTime @updatedAt
+}
+
+model Account {
+  accountType EnumAccountAccountType?
+  balance     Float?
+  cards       Card[]
+  createdAt   DateTime                @default(now())
+  id          String                  @id @default(cuid())
+  updatedAt   DateTime                @updatedAt
+  user        User?                   @relation(fields: [userId], references: [id])
+  userId      String?
+}
+
+model Goal {
+  amount      Float?
+  createdAt   DateTime  @default(now())
+  description String?
+  goalDate    DateTime?
+  id          String    @id @default(cuid())
+  updatedAt   DateTime  @updatedAt
+  user        User?     @relation(fields: [userId], references: [id])
+  userId      String?
+}
+
+enum EnumPriceAgeGroup {
+  Default
+  Youth
+  Teen
+}
+
+enum EnumAccountAccountType {
+  Spend
+  Save
+  Give
+}
