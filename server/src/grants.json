@@ -1,0 +1,902 @@
+[
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "FundingSource",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "FundingSource",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "FundingSource",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "FundingSource",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "FundingSource",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "FundingSource",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "FundingSource",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "FundingSource",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "FundingSource",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "FundingSource",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "FundingSource",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "FundingSource",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "FundingSource",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "FundingSource",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "FundingSource",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Setting",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Setting",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Setting",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Setting",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Setting",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Setting",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Setting",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Setting",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Setting",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Setting",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Setting",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Setting",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Setting",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Setting",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Setting",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Card",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Card",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Card",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Card",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Card",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Card",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Card",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Card",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Card",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Card",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Card",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Card",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Card",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Card",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Card",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Transaction",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Transaction",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Transaction",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Transaction",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Transaction",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Transaction",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Transaction",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Transaction",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Transaction",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Transaction",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Transaction",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Transaction",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Transaction",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Transaction",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Transaction",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Task",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Task",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Task",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Task",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Task",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Task",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Task",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Task",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Task",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Task",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Task",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Task",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Task",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Task",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Task",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Price",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Price",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Price",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Price",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Price",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Price",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Price",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Price",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Price",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Price",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Price",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Price",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Price",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Price",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Price",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Chore",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Chore",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Chore",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Chore",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Chore",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Chore",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Chore",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Chore",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Chore",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Chore",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Chore",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Chore",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Chore",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Chore",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Chore",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Account",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Account",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Account",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Account",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Account",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Account",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Account",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Account",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Account",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Account",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Account",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Account",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Account",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Account",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Account",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Goal",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Goal",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Goal",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Goal",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Goal",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Goal",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Goal",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Goal",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Goal",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Goal",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Goal",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Goal",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Goal",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "child",
+    "resource": "Goal",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "parent",
+    "resource": "Goal",
+    "action": "read:any",
+    "attributes": "*"
+  }
+]
