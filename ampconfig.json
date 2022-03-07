@@ -1,0 +1,19 @@
+{
+  "dataServiceGeneratorVersion": "0.11.4",
+  "appInfo": {
+    "name": "Kiddie Kapital",
+    "description": "",
+    "version": "dbfst54z",
+    "id": "cl0f6yuv7117360201s616ugfykh",
+    "url": "https://app.amplication.com/cl0f6yuv7117360201s616ugfykh",
+    "settings": {
+      "dbHost": "localhost",
+      "dbName": "",
+      "dbPassword": "admin",
+      "dbPort": 5432,
+      "dbUser": "admin",
+      "appId": "cl0f6yuv7117360201s616ugfykh",
+      "authProvider": "Jwt"
+    }
+  }
+}

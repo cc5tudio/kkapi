@@ -1,0 +1,33 @@
+import { AccountListRelationFilter } from "../account/AccountListRelationFilter";
+import { DateTimeNullableFilter } from "../../util/DateTimeNullableFilter";
+import { CardListRelationFilter } from "../card/CardListRelationFilter";
+import { UserListRelationFilter } from "./UserListRelationFilter";
+import { StringNullableFilter } from "../../util/StringNullableFilter";
+import { StringFilter } from "../../util/StringFilter";
+import { FundingSourceWhereUniqueInput } from "../fundingSource/FundingSourceWhereUniqueInput";
+import { GoalListRelationFilter } from "../goal/GoalListRelationFilter";
+import { UserWhereUniqueInput } from "./UserWhereUniqueInput";
+import { TaskListRelationFilter } from "../task/TaskListRelationFilter";
+import { TransactionListRelationFilter } from "../transaction/TransactionListRelationFilter";
+import { IntNullableFilter } from "../../util/IntNullableFilter";
+
+export type UserWhereInput = {
+  accounts?: AccountListRelationFilter;
+  birthdate?: DateTimeNullableFilter;
+  cards?: CardListRelationFilter;
+  children?: UserListRelationFilter;
+  depositLink?: StringNullableFilter;
+  email?: StringFilter;
+  firstName?: StringNullableFilter;
+  fundingSource?: FundingSourceWhereUniqueInput;
+  goals?: GoalListRelationFilter;
+  id?: StringFilter;
+  lastName?: StringNullableFilter;
+  parent?: UserWhereUniqueInput;
+  photo?: StringNullableFilter;
+  qrCode?: StringNullableFilter;
+  tasks?: TaskListRelationFilter;
+  transactions?: TransactionListRelationFilter;
+  username?: StringFilter;
+  zipcode?: IntNullableFilter;
+};
