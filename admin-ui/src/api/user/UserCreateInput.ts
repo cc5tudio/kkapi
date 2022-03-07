@@ -1,0 +1,30 @@
+import { AccountCreateNestedManyWithoutUsersInput } from "./AccountCreateNestedManyWithoutUsersInput";
+import { CardCreateNestedManyWithoutUsersInput } from "./CardCreateNestedManyWithoutUsersInput";
+import { UserCreateNestedManyWithoutUsersInput } from "./UserCreateNestedManyWithoutUsersInput";
+import { FundingSourceWhereUniqueInput } from "../fundingSource/FundingSourceWhereUniqueInput";
+import { GoalCreateNestedManyWithoutUsersInput } from "./GoalCreateNestedManyWithoutUsersInput";
+import { UserWhereUniqueInput } from "./UserWhereUniqueInput";
+import { TaskCreateNestedManyWithoutUsersInput } from "./TaskCreateNestedManyWithoutUsersInput";
+import { TransactionCreateNestedManyWithoutUsersInput } from "./TransactionCreateNestedManyWithoutUsersInput";
+
+export type UserCreateInput = {
+  accounts?: AccountCreateNestedManyWithoutUsersInput;
+  birthdate?: Date | null;
+  cards?: CardCreateNestedManyWithoutUsersInput;
+  children?: UserCreateNestedManyWithoutUsersInput;
+  depositLink?: string | null;
+  email: string;
+  firstName?: string | null;
+  fundingSource?: FundingSourceWhereUniqueInput | null;
+  goals?: GoalCreateNestedManyWithoutUsersInput;
+  lastName?: string | null;
+  parent?: UserWhereUniqueInput | null;
+  password: string;
+  photo?: string | null;
+  qrCode?: string | null;
+  roles: Array<string>;
+  tasks?: TaskCreateNestedManyWithoutUsersInput;
+  transactions?: TransactionCreateNestedManyWithoutUsersInput;
+  username: string;
+  zipcode?: number | null;
+};

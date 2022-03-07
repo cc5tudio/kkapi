@@ -1,0 +1,30 @@
+import { Account } from "../account/Account";
+import { Card } from "../card/Card";
+import { FundingSource } from "../fundingSource/FundingSource";
+import { Goal } from "../goal/Goal";
+import { Task } from "../task/Task";
+import { Transaction } from "../transaction/Transaction";
+
+export type User = {
+  accounts?: Array<Account>;
+  birthdate: Date | null;
+  cards?: Array<Card>;
+  children?: Array<User>;
+  createdAt: Date;
+  depositLink: string | null;
+  email: string;
+  firstName: string | null;
+  fundingSource?: FundingSource | null;
+  goals?: Array<Goal>;
+  id: string;
+  lastName: string | null;
+  parent?: User | null;
+  photo: string | null;
+  qrCode: string | null;
+  roles: Array<string>;
+  tasks?: Array<Task>;
+  transactions?: Array<Transaction>;
+  updatedAt: Date;
+  username: string;
+  zipcode: number | null;
+};

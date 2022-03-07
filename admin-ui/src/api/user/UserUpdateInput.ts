@@ -1,0 +1,30 @@
+import { AccountUpdateManyWithoutUsersInput } from "./AccountUpdateManyWithoutUsersInput";
+import { CardUpdateManyWithoutUsersInput } from "./CardUpdateManyWithoutUsersInput";
+import { UserUpdateManyWithoutUsersInput } from "./UserUpdateManyWithoutUsersInput";
+import { FundingSourceWhereUniqueInput } from "../fundingSource/FundingSourceWhereUniqueInput";
+import { GoalUpdateManyWithoutUsersInput } from "./GoalUpdateManyWithoutUsersInput";
+import { UserWhereUniqueInput } from "./UserWhereUniqueInput";
+import { TaskUpdateManyWithoutUsersInput } from "./TaskUpdateManyWithoutUsersInput";
+import { TransactionUpdateManyWithoutUsersInput } from "./TransactionUpdateManyWithoutUsersInput";
+
+export type UserUpdateInput = {
+  accounts?: AccountUpdateManyWithoutUsersInput;
+  birthdate?: Date | null;
+  cards?: CardUpdateManyWithoutUsersInput;
+  children?: UserUpdateManyWithoutUsersInput;
+  depositLink?: string | null;
+  email?: string;
+  firstName?: string | null;
+  fundingSource?: FundingSourceWhereUniqueInput | null;
+  goals?: GoalUpdateManyWithoutUsersInput;
+  lastName?: string | null;
+  parent?: UserWhereUniqueInput | null;
+  password?: string;
+  photo?: string | null;
+  qrCode?: string | null;
+  roles?: Array<string>;
+  tasks?: TaskUpdateManyWithoutUsersInput;
+  transactions?: TransactionUpdateManyWithoutUsersInput;
+  username?: string;
+  zipcode?: number | null;
+};
